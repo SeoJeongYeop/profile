@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<!-- Used Bootstrap toolkit
+  Utilities: Background, Border, Shadow, Size, Spacing
+  Components: Navs & tabs, List group
+  Layout: Contaner, Grid
+  Content: Typography
+-->
+
+<!-- This file have 1 photo, 3 Links, 3 Lists, 1 Tables -->
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+      crossorigin="anonymous"
+    />
+    <!-- Link CSS file -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Web Font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bangers&family=Istok+Web&family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+    <title>Profile: Jeongyeop Seo</title>
+  </head>
+  <body>
+    <!--HTML Code -->
+    <h1>Who am I?</h1>
+    <!--Bootstrap Component: Navs & tabs -->
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button
+          class="nav-link active"
+          id="home-tab"
+          data-bs-toggle="tab"
+          data-bs-target="#home"
+          type="button"
+          role="tab"
+          aria-controls="home"
+          aria-selected="true"
+        >
+          Profile
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button
+          class="nav-link"
+          id="profile-tab"
+          data-bs-toggle="tab"
+          data-bs-target="#profile"
+          type="button"
+          role="tab"
+          aria-controls="profile"
+          aria-selected="false"
+        >
+          Student Life
+        </button>
+      </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+      <div
+        class="tab-pane fade show active"
+        id="home"
+        role="tabpanel"
+        aria-labelledby="home-tab"
+      >
+        <!-- Profile page: 
+          My Photo and Personal Info-->
+        <div class="container">
+          <div class="row mt-5">
+            <div class="col-lg-3 col-sm-6 mt-5">
+              <img
+                src="photo.png"
+                alt="Photo of Jeongyeop Seo"
+                class="col shadow ps-0 pe-0 rounded-3 w-100"
+              />
+            </div>
+            <div class="col-lg-1 col-sm-6"></div>
+            <div class="col-lg-8 mt-5">
+              <ul class="Profile">
+                <li id="Name" class="list-unstyled">Jeongyeop Seo</li>
+                <li class="list-unstyled">
+                  Sungkyunkwan University (SKKU)
+                  <hr />
+                </li>
+
+                <li>Email: sjyswe99@gmail.com</li>
+                <li>
+                  Github:
+                  <a href="https://github.com/SeoJeongYeop" target="_blank">
+                    https://github.com/SeoJeongYeop</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="tab-pane fade"
+        id="profile"
+        role="tabpanel"
+        aria-labelledby="profile-tab"
+      >
+        <p>
+          I am a sophomore major in <strong>software</strong>. I'm interested in
+          <em><u>software development</u></em
+          >. However, I don't know details what I'm interested because I don't
+          have much experience yet. So I listen to IT seminar whenever I have a
+          chance. If you are SKKU student, we can listen together! (<a
+            href="https://itglobal.cs.skku.edu/"
+            target="_blank"
+            >SKKU IT Seminar</a
+          >)
+        </p>
+        <p>I take the following courses this semester.</p>
+        <ol class="list-group list-group-numbered">
+          <li
+            class="list-group-item d-flex justify-content-between align-items-start"
+          >
+            <div class="ms-4 me-auto">System Program</div>
+            <span class="badge bg-primary rounded-pill">Major</span>
+          </li>
+          <li
+            class="list-group-item d-flex justify-content-between align-items-start"
+          >
+            <div class="ms-4 me-auto">JAVA Programming Lab</div>
+            <span class="badge bg-primary rounded-pill">Major</span>
+          </li>
+          <li
+            class="list-group-item d-flex justify-content-between align-items-start"
+          >
+            <div class="ms-4 me-auto">Open Source Software Practice</div>
+            <span class="badge bg-primary rounded-pill">Major</span>
+          </li>
+          <li
+            class="list-group-item d-flex justify-content-between align-items-start"
+          >
+            <div class="ms-4 me-auto">Logic Circuits</div>
+            <span class="badge bg-primary rounded-pill">Major</span>
+          </li>
+          <li
+            class="list-group-item d-flex justify-content-between align-items-start"
+          >
+            <div class="ms-4 me-auto">Discrete Mathematics</div>
+            <span class="badge bg-secondary rounded-pill">Elective</span>
+          </li>
+          <li
+            class="list-group-item d-flex justify-content-between align-items-start"
+          >
+            <div class="ms-4 me-auto">Linear Algebra</div>
+            <span class="badge bg-secondary rounded-pill">Elective</span>
+          </li>
+        </ol>
+        <p>
+          This is that describe my campus life this semester by using the
+          urgent-important-matrix (Wiki:
+          <a
+            href="https://en.wikipedia.org/wiki/Time_management#The_Eisenhower_Method"
+            target="_blank"
+            >Eisenhower Matrix</a
+          >).
+          <br />
+        </p>
+        <table id="Matrix">
+          <tr>
+            <th>Time</th>
+            <th>Urgent</th>
+            <th>Not Urgent</th>
+          </tr>
+          <tr class="bg-primary">
+            <th>Important</th>
+            <td>
+              <ul>
+                <li>Assignment</li>
+                <li>Team Project</li>
+              </ul>
+            </td>
+            <td>
+              <ul>
+                <li>Lecture Review</li>
+                <li>Study Mathematics</li>
+                <li>Study English</li>
+              </ul>
+            </td>
+          </tr>
+          <tr class="bg-danger">
+            <th>Not Important</th>
+            <td>
+              <ul>
+                <li>Study Stock Market</li>
+              </ul>
+            </td>
+            <td>
+              <ul>
+                <li>Mobile Game</li>
+                <li>YouTube</li>
+              </ul>
+            </td>
+          </tr>
+        </table>
+        <p>
+          I keep putting off things that are important but not urgent. On the
+          other hand, I keep attention to not important things. I'm reflecting
+          on myself.
+        </p>
+      </div>
+    </div>
+    <!-- Optional JavaScript; choose one of the two! -->
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
